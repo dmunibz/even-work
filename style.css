@@ -1,0 +1,100 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #e8491d;
+    color: #ffffff;
+}
+
+.hero button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #4a6272;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.features article {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 30%;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .features article {
+        width: 100%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
